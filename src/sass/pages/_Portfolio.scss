@@ -1,0 +1,36 @@
+@import '../misc/variables';
+
+.portfolio-grid {
+	display: grid;
+	justify-content: center;
+	gap: pxToRem(20px);
+	margin-top: pxToRem(20px);
+	margin-bottom: pxToRem(120px);
+
+	.portfolio-grid-image {
+		position: relative;
+
+		img {
+			filter: brightness(80%);
+			width: 100%;
+		}
+		.grid-content {
+			position: absolute;
+			bottom: pxToRem(25px);
+			left: pxToRem(25px);
+			color: white;
+
+			h2 {
+				font-size: pxToRem(32px);
+				font-weight: 700;
+				line-height: pxToRem(40px);
+			}
+		}
+	}
+}
+@media (min-width: 1080px) {
+	.portfolio-grid {
+		margin-inline: pxToRem(170px);
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

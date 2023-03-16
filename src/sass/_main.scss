@@ -1,0 +1,174 @@
+@import './misc/variables';
+
+main {
+	.button {
+		font-family: 'League Spartan', sans-serif;
+		color: white;
+		background-color: $Very-Dark-Blue;
+		border: none;
+		font-weight: 800;
+		font-size: pxToRem(18px);
+		height: pxToRem(72px);
+		display: flex;
+		align-items: center;
+		padding-inline: pxToRem(30px);
+		margin-top: pxToRem(25px);
+		cursor: pointer;
+
+		&::after {
+			content: url('/src/assets/icons/icon-arrow.svg');
+			width: pxToRem(20px);
+			height: pxToRem(20px);
+			padding-left: pxToRem(20px);
+		}
+
+		&:hover {
+			background-color: #4c4e58;
+			transition: 1s ease;
+
+			&:after {
+				transform: translateX(5px);
+				transition: 1s ease;
+			}
+		}
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: pxToRem(30px);
+		img {
+			max-width: pxToRem(77px);
+		}
+	}
+
+	footer {
+		background-color: $Very-Light-Grey;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-inline: pxToRem(60px);
+		padding-bottom: pxToRem(70px);
+		position: relative;
+
+		img {
+			filter: invert(100%) sepia(75%) hue-rotate(137deg) brightness(105%)
+				contrast(101%);
+			max-width: pxToRem(58px);
+		}
+
+		.footer-logo {
+			background-color: $Very-Dark-Blue;
+			width: pxToRem(120px);
+			height: pxToRem(120px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			top: pxToRem(-10px);
+		}
+
+		.footer-links {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: pxToRem(90px);
+			gap: pxToRem(30px);
+
+			.footer-link-text {
+				font-weight: 700;
+				color: $Medium-Grey;
+				text-decoration: none;
+			}
+		}
+
+		.button-text {
+			text-decoration: none;
+			color: white;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	main {
+		max-width: pxToRem(768px);
+		margin: auto;
+		.navbar {
+			justify-content: unset;
+			margin-inline: pxToRem(100px);
+			padding: pxToRem(50px) 0;
+			gap: pxToRem(150px);
+			.nav-links {
+				display: flex;
+				gap: pxToRem(30px);
+				a {
+					text-decoration: none;
+					color: $Medium-Grey;
+					font-size: pxToRem(18px);
+					line-height: pxToRem(25px);
+					font-weight: 700;
+
+					&:hover {
+						background-color: rgba($color: rgba(48, 47, 48, 0), $alpha: 0.1);
+						transition: 1s ease;
+						padding-inline: pxToRem(10px);
+						border-radius: 10%;
+					}
+				}
+			}
+		}
+		footer {
+			flex-direction: row;
+			padding: 0;
+			justify-content: flex-start;
+			gap: pxToRem(30px);
+			max-width: pxToRem(580px);
+			.footer-logo {
+				position: static;
+				transform: unset;
+			}
+			.footer-links {
+				flex-direction: row;
+				justify-content: center;
+				padding: 0;
+				gap: pxToRem(80px);
+				p {
+					font-size: pxToRem(18px);
+					line-height: pxToRem(25px);
+				}
+			}
+			.button {
+				margin: 0;
+				align-self: center;
+				position: absolute;
+				right: pxToRem(-200px);
+			}
+		}
+	}
+}
+@media (min-width: 1080px) {
+	main {
+		max-width: pxToRem(1490px);
+		margin: auto;
+		.navbar {
+			margin-inline: pxToRem(170px);
+		}
+		footer {
+			gap: pxToRem(80px);
+			max-width: pxToRem(860px);
+			margin: auto;
+			.footer-links {
+				gap: pxToRem(80px);
+			}
+			.button {
+				margin: 0;
+				align-self: center;
+				position: absolute;
+				right: pxToRem(-100px);
+			}
+		}
+	}
+}

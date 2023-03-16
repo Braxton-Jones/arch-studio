@@ -1,0 +1,206 @@
+@import "../misc/variables";
+
+.about {
+    h2 {
+        font-weight: 700;
+        font-size: pxToRem(48px);
+        line-height: pxToRem(52px);
+        letter-spacing: pxToRem(-1.2px);
+        margin-bottom: pxToRem(20px);
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: pxToRem(32px);
+        line-height: pxToRem(40px);
+        margin-top: pxToRem(10px);
+    }
+
+    p {
+        font-size: pxToRem(18px);
+        line-height: pxToRem(24px);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    margin: pxToRem(10px) 0 pxToRem(180px) 0;
+
+    .about-hero {
+        background-image: url("../../assets/about/mobile/image-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: pxToRem(240px);
+        margin-bottom: pxToRem(280px);
+
+        .about-hero-content {
+            position: relative;
+            margin-right: 10%;
+            padding: pxToRem(50px) pxToRem(30px);
+            top: pxToRem(190px);
+            color: black;
+            background-color: white;
+            max-width: pxToRem(400px);
+        }
+    }
+
+    .divider {
+        height: pxToRem(1px);
+        width: pxToRem(65px);
+        background-color: $Light-Grey;
+        display: inline-block;
+        margin-inline: pxToRem(30px);
+        margin-top: pxToRem(80px);
+
+    }
+
+    .about-body {
+        margin-top: pxToRem(50px);
+        margin-inline: pxToRem(30px);
+
+        .about-body-content {
+            p {
+                margin-bottom: pxToRem(30px);
+            }
+        }
+    }
+
+    .about-leaders {
+        margin-inline: pxToRem(30px);
+
+        h2 {
+            margin-right: pxToRem(90px);
+            margin-bottom: pxToRem(50px);
+        }
+
+        .about-leaders-grid {
+            display: grid;
+            gap: pxToRem(80px);
+        }
+    }
+
+}
+
+
+@media (min-width:768px) {
+    .about {
+        margin-inline: pxToRem(100px);
+
+        h2 {
+            font-size: pxToRem(72px);
+            line-height: pxToRem(64px);
+        }
+
+        .about-body-content,
+        .about-leaders {
+            h2 {
+
+                margin-bottom: pxToRem(60px);
+            }
+        }
+
+        .about-body,
+        .divider,
+        .about-leaders {
+            margin-inline: 0;
+        }
+
+        .about-hero {
+            background-image: url("../../assets/about/tablet/image-hero.jpg");
+            height: pxToRem(720px);
+            margin-bottom: pxToRem(80px);
+            max-width: fit-content;
+            margin: auto;
+
+
+            .about-hero-content {
+                position: relative;
+                margin: auto;
+                min-height: pxToRem(300px);
+                margin-left: pxToRem(60px);
+                top: 38%;
+                max-width: pxToRem(600px);
+                padding: pxToRem(200px) pxToRem(20px) pxToRem(11px) pxToRem(60px);
+
+                h2 {
+
+                    &::before {
+                        content: "About";
+                        position: absolute;
+                        color: $Very-Light-Grey;
+                        font-size: pxToRem(150px);
+                        line-height: pxToRem(200px);
+                        top: pxToRem(-85px);
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+
+        .about-leaders {
+            margin-top: pxToRem(200px);
+
+            .about-leaders-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: pxToRem(80px) pxToRem(10px);
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (min-width:1080px) {
+    .about {
+        margin-inline: pxToRem(170px);
+
+        .about-hero {
+            background-image: url("../../assets/about/desktop/image-hero.jpg");
+            background-size: pxToRem(635px);
+
+            .about-hero-content {
+                margin-left: pxToRem(500px);
+                top: 38%;
+                max-width: pxToRem(600px);
+                padding: pxToRem(200px) pxToRem(20px) pxToRem(11px) pxToRem(150px);
+
+                h2 {
+
+                    &::before {
+                        content: "About";
+                        position: absolute;
+                        color: $Very-Light-Grey;
+                        font-size: pxToRem(250px);
+                        line-height: pxToRem(200px);
+                        top: pxToRem(-85px);
+                        right: pxToRem(60px);
+                    }
+                }
+            }
+        }
+
+        .about-body {
+            display: flex;
+            gap: pxToRem(90px);
+
+            &::after {
+                content: url("../../assets/about/desktop/image-heritage.jpg");
+            }
+
+            .about-body-content {
+                padding-top: pxToRem(30px);
+            }
+        }
+
+        .about-leaders {
+            display: flex;
+            justify-content: space-between;
+                .about-leaders-grid{
+                    margin: 0;
+                    gap: pxToRem(20px);
+                }
+        }
+    }
+}

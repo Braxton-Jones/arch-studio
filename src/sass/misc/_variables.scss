@@ -1,0 +1,16 @@
+@use "sass:math";
+// Colors
+$Very-Dark-Blue: #1b1d23;
+$Dark-Grey: #60636D;
+$Medium-Grey: #7D828F;
+$Light-Grey: #c8ccd8;
+$Very-Light-Grey: #eeeff4;
+$Red: #df5656;
+$numbers: 1,2,3;
+
+
+
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+

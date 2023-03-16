@@ -1,0 +1,300 @@
+@import '../misc/variables';
+
+.home {
+	.home-hero,
+	.home-about {
+		color: white;
+		margin-bottom: pxToRem(50px);
+		display: flex;
+		align-items: center;
+		padding: pxToRem(30px);
+
+		h1 {
+			font-size: pxToRem(48px);
+			line-height: pxToRem(48px);
+			letter-spacing: pxToRem(-1.2px);
+			font-weight: 700;
+			margin-bottom: pxToRem(10px);
+		}
+
+		p {
+			font-size: pxToRem(18px);
+			line-height: pxToRem(24px);
+			margin-bottom: pxToRem(60px);
+		}
+	}
+
+	.home-hero {
+		background: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0) 20%,
+				rgba(0, 0, 0, 1)
+			),
+			url('/src/assets/home/mobile/image-hero-paramour.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: pxToRem(560px);
+	}
+
+	.home-about {
+		background: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0) 20%,
+				rgba(0, 0, 0, 1)
+			),
+			url('/src/assets/home/mobile/image-small-team.jpg');
+		background-size: cover;
+		min-height: pxToRem(560px);
+	}
+
+	.divider {
+		height: pxToRem(1px);
+		width: pxToRem(65px);
+		background-color: $Light-Grey;
+		display: inline-block;
+		margin-inline: pxToRem(30px);
+	}
+
+	.home-body {
+		margin-inline: pxToRem(25px);
+
+		h2 {
+			font-size: pxToRem(48px);
+			line-height: pxToRem(52px);
+			letter-spacing: pxToRem(-1.7px);
+			font-weight: 700;
+			border-top: 2px solid $Medium-Grey pxToRem(20px);
+			margin-top: pxToRem(50px);
+			margin-bottom: pxToRem(30px);
+		}
+
+		p {
+			font-size: pxToRem(18px);
+			line-height: pxToRem(24px);
+			color: $Dark-Grey;
+			margin-bottom: pxToRem(20px);
+		}
+
+		p:last-of-type {
+			margin-bottom: pxToRem(100px);
+		}
+	}
+
+	.home-projects {
+		margin-inline: pxToRem(30px);
+
+		h2 {
+			font-size: pxToRem(48px);
+			line-height: pxToRem(48px);
+			letter-spacing: pxToRem(-1.7px);
+			font-weight: 700;
+			margin-bottom: pxToRem(10px);
+		}
+
+		.home-projects-grid {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: pxToRem(150px);
+
+			.grid {
+				min-width: pxToRem(311px);
+				min-height: pxToRem(240px);
+				position: relative;
+
+				margin-top: pxToRem(25px);
+
+				img {
+					width: 100%;
+					height: 100%;
+					filter: brightness(80%);
+				}
+
+				h4 {
+					position: absolute;
+					bottom: 0;
+					color: white;
+					font-weight: 700;
+					font-size: pxToRem(32px);
+					padding: pxToRem(25px);
+				}
+
+				&:hover {
+					transform: scale(1.05);
+					transition: 1s ease-in-out;
+				}
+			}
+
+			.button {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		#hidden-lg {
+			display: none;
+		}
+
+		.grid-index {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.home {
+		margin-inline: pxToRem(100px);
+
+		.home-hero {
+			height: pxToRem(600px);
+			padding: pxToRem(60px);
+			background: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, 0) 20%,
+					rgba(0, 0, 0, 1)
+				),
+				url('/src/assets/home/tablet/image-hero-paramour.jpg');
+			background-repeat: no-repeat;
+
+			h1 {
+				font-size: pxToRem(96px);
+				line-height: pxToRem(80px);
+				letter-spacing: pxToRem(-2px);
+			}
+		}
+
+		.divider {
+			display: none;
+		}
+
+		.home-body {
+			margin-top: pxToRem(220px);
+			margin-inline: unset;
+
+			h2 {
+				font-size: pxToRem(72px);
+				padding-right: pxToRem(90px);
+				line-height: pxToRem(64px);
+				position: relative;
+
+				&::before {
+					content: 'Welcome';
+					position: absolute;
+					color: $Very-Light-Grey;
+					font-size: pxToRem(150px);
+					line-height: pxToRem(200px);
+					top: pxToRem(-160px);
+				}
+			}
+		}
+
+		.home-about {
+			background: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, 0) 20%,
+					rgba(0, 0, 0, 1)
+				),
+				url('/src/assets/home/tablet/image-small-team.jpg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			padding: 0 pxToRem(50px);
+
+			h1 {
+				font-size: pxToRem(72px);
+				line-height: pxToRem(64px);
+			}
+		}
+
+		.home-projects {
+			margin-inline: 0;
+
+			h2 {
+				font-size: pxToRem(72px);
+			}
+
+			h4 {
+				display: flex;
+				flex-direction: column;
+				gap: pxToRem(10px);
+			}
+
+			.home-projects-title {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: pxToRem(160px) 0 pxToRem(30px) 0;
+			}
+
+			.grid {
+				position: relative;
+
+				.grid-index {
+					display: block;
+					position: absolute;
+					font-size: pxToRem(250px);
+					font-weight: 700;
+					z-index: 1;
+					top: 0;
+					right: pxToRem(10px);
+					color: rgba(255, 255, 255, 0.4);
+				}
+			}
+
+			#hidden-sm {
+				display: none;
+			}
+
+			#hidden-lg {
+				display: flex;
+				margin: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.home {
+		margin-inline: pxToRem(170px);
+
+		.home-body {
+			&::after {
+				content: url('../../assets/home/desktop/image-welcome.jpg');
+			}
+
+			display: flex;
+
+			h2 {
+				&::before {
+					font-size: pxToRem(250px);
+					left: pxToRem(-145px);
+				}
+			}
+
+			.home-body-content {
+				padding-inline: pxToRem(155px);
+			}
+		}
+
+		.home-about {
+			background: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, 0) 20%,
+					rgba(0, 0, 0, 1)
+				),
+				url('/src/assets/home/desktop/image-small-team.jpg');
+			background-repeat: no-repeat;
+
+			div {
+				padding-left: pxToRem(140px);
+			}
+		}
+
+		.home-projects {
+			.home-projects-grid {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+	}
+}
