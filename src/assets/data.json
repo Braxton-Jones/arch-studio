@@ -28,7 +28,8 @@
 		}
 	],
 
-	"portfolio": [{
+	"portfolio": [
+		{
 			"id": 1,
 			"imageSources": {
 				"mobile": "./src/assets/portfolio/mobile/image-seraph.jpg",

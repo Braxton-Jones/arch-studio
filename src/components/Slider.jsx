@@ -34,7 +34,7 @@ function Slider() {
 			desc: 'Trinity Bank challenged us to make a concept for a 8 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.',
 		},
 	];
-
+	
 	const handleSlideChange = (index) => {
 		setCurrentSlide(index);
 	};
