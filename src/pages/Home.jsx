@@ -17,7 +17,7 @@ function Home(props){
 		{
 			id: 2,
 			imageSources: {
-				mobile: import('./src/assets/portfolio/mobile/image-eebox.jpg'),
+				mobile: import('../assets/portfolio/mobile/image-eebox.jpg'),
 				tablet: require('../src/assets/portfolio/tablet/image-eebox.jpg'),
 				desktop: require('../src/assets/portfolio/desktop/image-eebox.jpg'),
 			},
