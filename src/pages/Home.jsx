@@ -1,7 +1,6 @@
 import "../sass/pages/_Home.scss"
 import {Link} from 'react-router-dom';
 import Slider from "../components/Slider";
-import fog from "."
 function Home(props){
 	const image = [
 		{
