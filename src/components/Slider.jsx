@@ -26,7 +26,11 @@ function Slider() {
 					key={index}
 					className={`slide ${index === currentSlide ? 'active' : ''}`}
 				>
-					<img src={slide.image} alt='' className='slide-image' />
+					<img
+						src={`../assets/home/desktop/${slide.image}`}
+						alt=''
+						className='slide-image'
+					/>
 					<div className='info'>
 						<h2>{slide.name}</h2>
 						<p>{slide.desc}</p>
