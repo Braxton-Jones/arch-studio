@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import data from "../assets/data.json"
 import "../sass/components/Slider.scss"
 
-
-import { useState, useEffect } from 'react';
-
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
