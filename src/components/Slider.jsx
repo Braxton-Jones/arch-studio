@@ -25,12 +25,8 @@ function Slider() {
 				<div
 					key={index}
 					className={`slide ${index === currentSlide ? 'active' : ''}`}
+					style={{ backgroundImage: `./assets/home/desktop/${slide.image}`}}
 				>
-					<img
-						src={`/src/assets/home/desktop/${slide.image}`}
-						alt=''
-						className='slide-image'
-					/>
 					<div className='info'>
 						<h2>{slide.name}</h2>
 						<p>{slide.desc}</p>

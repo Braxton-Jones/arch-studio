@@ -2,7 +2,6 @@ import "../sass/pages/_Home.scss"
 import {Link} from 'react-router-dom';
 import images from "../assets/data.json"
 import Slider from "../components/Slider";
-import hehe from "../assets/home/desktop/image-hero-federal.jpg"
 function Home(props){
  const image = images.portfolio.slice(3, 6)
     return (
@@ -47,7 +46,6 @@ function Home(props){
 				</section>
 
 				<section className='home-about'>
-					<img src={hehe}/>
 					<div>
 						<h1>
 							Small team,
