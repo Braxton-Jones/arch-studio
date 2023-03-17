@@ -1,14 +1,15 @@
 import "../sass/pages/_Home.scss"
 import {Link} from 'react-router-dom';
 import Slider from "../components/Slider";
+import fog from "."
 function Home(props){
 	const image = [
 		{
 			id: 1,
 			imageSources: {
-				mobile: import('.././src/assets/portfolio/mobile/image-seraph.jpg'),
-				tablet: import('.././src/assets/portfolio/tablet/image-seraph.jpg'),
-				desktop: import('.././src/assets/portfolio/desktop/image-seraph.jpg'),
+				mobile: import('../src/assets/portfolio/mobile/image-seraph.jpg'),
+				tablet: import('../src/assets/portfolio/tablet/image-seraph.jpg'),
+				desktop: import('../src/assets/portfolio/desktop/image-seraph.jpg'),
 			},
 			title: 'Seraph Station',
 			date: 'September 2019',
@@ -17,9 +18,9 @@ function Home(props){
 		{
 			id: 2,
 			imageSources: {
-				mobile: import('./src/assets/portfolio/mobile/image-eebox.jpg'),
-				tablet: require('./src/assets/portfolio/tablet/image-eebox.jpg'),
-				desktop: require('./src/assets/portfolio/desktop/image-eebox.jpg'),
+				mobile: import('../src/assets/portfolio/mobile/image-eebox.jpg'),
+				tablet: require('../src/assets/portfolio/tablet/image-eebox.jpg'),
+				desktop: require('../src/assets/portfolio/desktop/image-eebox.jpg'),
 			},
 			title: 'Eebox building',
 			date: 'August 2017',
