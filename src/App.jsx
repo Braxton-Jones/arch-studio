@@ -43,7 +43,7 @@ function App() {
 		<BrowserRouter>
 			<main>
 				<section className='navbar'>
-					<Link to='/arch-studio'>
+					<Link to='/'>
 						<img src={logo} />
 					</Link>
 					<div>
