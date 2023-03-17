@@ -20,7 +20,7 @@ function Slider() {
 					style={{
 						backgroundImage: `url(${
 							import.meta.env.BASE_URL
-						}assets/home/desktop/${slide.image})`,
+						}/assets/${slide.image})`,
 					}}
 				>
 					<div className='info'>
