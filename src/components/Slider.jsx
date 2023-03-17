@@ -25,7 +25,7 @@ function Slider() {
 				<div
 					key={index}
 					className={`slide ${index === currentSlide ? 'active' : ''}`}
-					style={{ backgroundImage: `url(/src/assets/home/desktop/${slide.image})`}}
+					style={{ backgroundImage: `url(../src/assets/home/desktop/${slide.image})`}}
 				>
 					<div className='info'>
 						<h2>{slide.name}</h2>
