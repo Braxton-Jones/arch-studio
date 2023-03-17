@@ -2,26 +2,26 @@
 	"home": [
 		{
 			"id": 1,
-			"image": "./assets/home/desktop/image-hero-paramour.jpg",
+			"image": "../assets/home/desktop/image-hero-paramour.jpg",
 			"name": "Project Paramour",
 			"desc": "Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture."
 		},
 		{
 			"id": 2,
-			"image": "./assets/home/desktop/image-hero-federal.jpg",
+			"image": "/assets/home/desktop/image-hero-federal.jpg",
 			"name": "Federal II Tower",
 			"desc": "A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches."
 		},
 		{
 			"id": 3,
-			"image": "./assets/home/desktop/image-hero-seraph.JPG",
+			"image": "assets/home/desktop/image-hero-seraph.JPG",
 			"name": "Seraph Station",
 			"desc": "The Seraph Station project challenged us to design a unique station that would transport people through time.The result is a fresh and futuristic model inspired by space stations."
 
 		},
 		{
 			"id": 4,
-			"image": "./assets/home/desktop/image-hero-trinity.jpg",
+			"image": "assets/home/desktop/image-hero-trinity.jpg",
 			"name": "Trinity Bank Tower",
 			"desc": "Trinity Bank challenged us to make a concept for a 8 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives."
 			
