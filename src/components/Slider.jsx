@@ -25,7 +25,7 @@ function Slider() {
 				<div
 					key={index}
 					className={`slide ${index === currentSlide ? 'active' : ''}`}
-					style={{ backgroundImage: `./assets/home/desktop/${slide.image}`}}
+					style={{ backgroundImage: `url(../assets/home/desktop/${slide.image})`}}
 				>
 					<div className='info'>
 						<h2>{slide.name}</h2>
@@ -35,7 +35,7 @@ function Slider() {
 						</Link>
 					</div>
 				</div>
-			))}
+			)
 			<div className='navigation'>
 				{slides.map((slide, index) => (
 					<div
