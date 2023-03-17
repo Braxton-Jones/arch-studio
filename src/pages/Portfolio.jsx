@@ -1,4 +1,4 @@
-import images from "../data.json"
+import images from "../assets/data.json"
 import "../sass/pages/_Portfolio.scss"
 function Portfolio(props) {
 
