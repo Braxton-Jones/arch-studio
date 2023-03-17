@@ -1,6 +1,6 @@
 import "../sass/pages/_Home.scss"
 import {Link} from 'react-router-dom';
-import images from "../data.json"
+import images from "../assets/data.json"
 import Slider from "../components/Slider";
 function Home(props){
  const image = images.portfolio.slice(3, 6)
