@@ -35,7 +35,7 @@ function Slider() {
 						</Link>
 					</div>
 				</div>
-			)
+			))}
 			<div className='navigation'>
 				{slides.map((slide, index) => (
 					<div
