@@ -27,7 +27,7 @@ function Slider() {
 					className={`slide ${index === currentSlide ? 'active' : ''}`}
 				>
 					<img
-						src={`../assets/home/desktop/${slide.image}`}
+						src={`/src/assets/home/desktop/${slide.image}`}
 						alt=''
 						className='slide-image'
 					/>
