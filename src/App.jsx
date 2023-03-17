@@ -40,7 +40,7 @@ function App() {
 	}
 
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename='/arch-studio'>
 			<main>
 				<section className='navbar'>
 					<Link to='/'>
