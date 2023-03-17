@@ -2,7 +2,7 @@
 	"home": [
 		{
 			"id": 1,
-			"image": "src/assets/home/desktop/image-hero-paramour.jpg",
+			"image": "./image-hero-paramour.jpg",
 			"name": "Project Paramour",
 			"desc": "Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture."
 		},
