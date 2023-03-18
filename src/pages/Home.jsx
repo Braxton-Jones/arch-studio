@@ -30,9 +30,9 @@ function Home(props){
 		{
 			id: 2,
 			imageSources: {
-				mobile: 'src/assets/portfolio/mobile/image-prototype.jpg',
-				tablet: 'src/assets/portfolio/tablet/image-prototype.jpg',
-				desktop: 'src/assets/portfolio/desktop/image-prototype.jpg',
+				mobile: prototypeMobile,
+				tablet: prototypeTablet,
+				desktop: prototypeDesktop,
 			},
 			title: 'Le Prototype',
 			date: 'October 2015',
@@ -41,16 +41,14 @@ function Home(props){
 		{
 			id: 3,
 			imageSources: {
-				mobile: 'src/assets/portfolio/mobile/image-228b.jpg',
-				tablet: 'src/assets/portfolio/tablet/image-228b.jpg',
-				desktop: 'src/assets/portfolio/desktop/image-228b.jpg',
+				mobile: tower228bMobile,
+				tablet: tower228bTablet,
+				desktop: tower228bDesktop,
 			},
 			title: '228B Tower',
 			date: 'April 2015',
 		}
 	];
- const imageshort = image
- console.log(imageshort[1].imageSources[props.deviceBreakpoint]);
     return (
 			<section className='home'>
 				{props.deviceBreakpoint === "desktop" ? 
@@ -113,17 +111,17 @@ function Home(props){
 
 					<div className='home-projects-grid'>
 						<div className='grid'>
-							<img src={imageshort[0].imageSources[props.deviceBreakpoint]} />
+							<img src={image[0].imageSources[props.deviceBreakpoint]} />
 							<h4>Project Del Sol</h4>
 							<h1 className="grid-index">1</h1>
 						</div>
 						<div className='grid'>
-							<img src={imageshort[2].imageSources[props.deviceBreakpoint]} />
+							<img src={image[2].imageSources[props.deviceBreakpoint]} />
 							<h4>228B Tower</h4>
 							<h1 className="grid-index">2</h1>
 						</div>
 						<div className='grid'>
-							<img src={imageshort[1].imageSources[props.deviceBreakpoint]} />
+							<img src={image[1].imageSources[props.deviceBreakpoint]} />
 							<h4>Le Prototype</h4>
 							<h1 className="grid-index">3</h1>
 						</div>
