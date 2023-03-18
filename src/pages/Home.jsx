@@ -18,8 +18,8 @@ function Home(props){
 			id: 2,
 			imageSources: {
 				mobile: import('../assets/portfolio/mobile/image-eebox.jpg'),
-				tablet: require('../src/assets/portfolio/tablet/image-eebox.jpg'),
-				desktop: require('../src/assets/portfolio/desktop/image-eebox.jpg'),
+				tablet: '../src/assets/portfolio/tablet/image-eebox.jpg',
+				desktop: '../src/assets/portfolio/desktop/image-eebox.jpg',
 			},
 			title: 'Eebox building',
 			date: 'August 2017',
