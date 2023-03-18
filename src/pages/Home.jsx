@@ -39,9 +39,9 @@ function Home(props){
 		{
 			id: 4,
 			imageSources: {
-				mobile: 'src/assets/portfolio/mobile/image-del-sol.jpg',
-				tablet: 'src/assets/portfolio/tablet/image-del-sol.jpg',
-				desktop: 'src/assets/portfolio/desktop/image-del-sol.jpg',
+				mobile: import('../assets/portfolio/mobile/image-del-sol.jpg'),
+				tablet: import('../assets/portfolio/tablet/image-del-sol.jpg'),
+				desktop: import('../assets/portfolio/desktop/image-del-sol.jpg'),
 			},
 			title: 'Project Del Sol',
 			date: 'January 2016',
