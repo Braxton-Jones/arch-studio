@@ -28,9 +28,9 @@ function Home(props){
 		{
 			id: 3,
 			imageSources: {
-				mobile: 'src/assets/portfolio/mobile/image-federal.jpg',
-				tablet: 'src/assets/portfolio/tablet/image-federal.jpg',
-				desktop: 'src/assets/portfolio/desktop/image-federal.jpg',
+				mobile: import('../assets/portfolio/mobile/image-federal.jpg'),
+				tablet: import('../assets/portfolio/tablet/image-federal.jpg'),
+				desktop: import('../assets/portfolio/desktop/image-federal.jpg'),
 			},
 			title: 'Federal II Tower',
 			date: 'March 2017',
@@ -136,6 +136,7 @@ function Home(props){
 		},
 	];
  const imageshort = image.slice(3, 6)
+ console.log(imageshort[1].imageSources[props.deviceBreakpoint]);
     return (
 			<section className='home'>
 				{props.deviceBreakpoint === "desktop" ? 
