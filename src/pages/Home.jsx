@@ -106,7 +106,10 @@ function Home(props){
 				<section className='home-projects'>
 					<div className="home-projects-title">
 						<h2>Featured</h2>
-						<button className='button' id="hidden-lg">See All</button>
+						<Link to={"/portfolio"}>
+							<button className='button' id="hidden-lg">See All</button>
+						</Link>
+						
 					</div>
 
 					<div className='home-projects-grid'>
