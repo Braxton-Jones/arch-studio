@@ -139,3 +139,7 @@ form textarea:focus,
 form button:focus {
   outline: none;
 }
+
+button:visited {
+  text-decoration: none;
+}

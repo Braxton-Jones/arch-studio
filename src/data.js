@@ -120,6 +120,7 @@ const data = {
 			},
 			title: 'Project Del Sol',
 			date: 'January 2016',
+			index: '1',
 		},
 
 		{
@@ -131,6 +132,7 @@ const data = {
 			},
 			title: 'Le Prototype',
 			date: 'October 2015',
+			index: '2',
 		},
 
 		{
@@ -142,6 +144,7 @@ const data = {
 			},
 			title: '228B Tower',
 			date: 'April 2015',
+			index: '3',
 		},
 
 		{

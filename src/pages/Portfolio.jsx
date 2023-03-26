@@ -1,5 +1,5 @@
 import "../sass/pages/_Portfolio.scss"
-import data from "../data"
+import data from '../data';
 
 
 

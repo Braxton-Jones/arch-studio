@@ -7,7 +7,7 @@ import MobileMenu from './components/MobileMenu';
 import logo from './assets/logo.svg';
 import hamburgerMenu from './assets/icons/icon-hamburger.svg';
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link,} from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
 function App() {
@@ -107,7 +107,7 @@ function App() {
 							className='footer-link-text'
 							onClick={handleScroll}
 						>
-							<p onClick={handleScroll}>Contact</p>
+							<p>Contact</p>
 						</Link>
 					</div>
 
