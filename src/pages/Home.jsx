@@ -6,7 +6,7 @@ import data from '../data';
 
 function Home(props){
 	const images = data.portfolio.filter((item) => item.id >= 4 && item.id <= 6);
-
+	console.log(images)
 
 const featuredProjects = images.map(image => {
 	return (
@@ -17,54 +17,44 @@ const featuredProjects = images.map(image => {
 		</div>
 	);
 })
-
-function handleScroll() {
-	window.scrollTo({
-		top: 0,
-		left: 0,
-		behavior: 'smooth',
-	});
-}
     return (
 			<section className='home'>
-				{props.deviceBreakpoint === 'desktop' ? (
-					<Slider />
-				) : (
-					<section className='home-hero'>
-						<div>
-							<h1>Project Paramour</h1>
-							<p>
-								Project made for an art museum near Southwest London. Project
-								Paramour is a statement of bold, modern architecture.
-							</p>
-							<Link to='/portfolio' onClick={handleScroll}>
-								<button className='button'>See Our Portfolio</button>
-							</Link>
-						</div>
-					</section>
-				)}
-
+				{props.deviceBreakpoint === "desktop" ? 
+				<Slider/> : 
+				<section className='home-hero'>
+					<div>
+						<h1>Project Paramour</h1>
+						<p>
+							Project made for an art museum near Southwest London. Project
+							Paramour is a statement of bold, modern architecture.
+						</p>
+						<Link to='/portfolio'>
+							<button className='button'>See Our Portfolio</button>
+						</Link>
+					</div>
+				</section> }
+				
 				<span className='divider'></span>
 				<section className='home-body'>
-					<div className='home-body-content'>
-						<h2>Welcome to Arch Studio</h2>
-						<p>
-							We have a unique network and skillset to help bring your projects
-							to life. Our small team of highly skilled individuals combined
-							with our large network put us in a strong position to deliver
-							exceptional results.
-						</p>
-						<p>
-							Over the past 10 years, we have worked on all kinds of projects.
-							From stations to high-rise buildings, we create spaces that
-							inspire and delight.
-						</p>
-						<p>
-							We work closely with our clients so that we understand the
-							intricacies of each project. This allows us to work in harmony the
-							surrounding area to create truly stunning projects that will stand
-							the test of time.
-						</p>
+					<div className="home-body-content">
+					<h2>Welcome to Arch Studio</h2>
+					<p>
+						We have a unique network and skillset to help bring your projects to
+						life. Our small team of highly skilled individuals combined with our
+						large network put us in a strong position to deliver exceptional
+						results.
+					</p>
+					<p>
+						Over the past 10 years, we have worked on all kinds of projects.
+						From stations to high-rise buildings, we create spaces that inspire
+						and delight.
+					</p>
+					<p>
+						We work closely with our clients so that we understand the
+						intricacies of each project. This allows us to work in harmony the
+						surrounding area to create truly stunning projects that will stand
+						the test of time.
+					</p>
 					</div>
 				</section>
 
@@ -75,27 +65,24 @@ function handleScroll() {
 							<br />
 							big ideas
 						</h1>
-						<Link to='/about' onClick={handleScroll}>
-							<button className='button'>About Us</button>
+						<Link to="/about">
+						<button className='button'>About Us</button>
 						</Link>
 					</div>
 				</section>
 
 				<section className='home-projects'>
-					<div className='home-projects-title'>
+					<div className="home-projects-title">
 						<h2>Featured</h2>
-						<Link to='/portfolio' onClick={handleScroll}>
-							<button className='button' id='hidden-lg'>
-								See All
-							</button>
+						<Link to="/portfolio">
+							<button className='button' id="hidden-lg">See All</button>
 						</Link>
+						
 					</div>
 
 					<div className='home-projects-grid'>
-						{featuredProjects}
-						<button className='button' id='hidden-sm'>
-							See All
-						</button>
+					{featuredProjects}
+						<button className='button' id="hidden-sm">See All</button>
 					</div>
 				</section>
 			</section>
