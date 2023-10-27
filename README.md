@@ -17,4 +17,4 @@ This project is open-source and available under the MIT License, giving you the 
 
 ## Acknowledgments
 
-This project was created with the goal of refining design skills and can serve as a valuable foundation for showcasing your architecture studio. Dive in, make it your own, and impress your audience with a stunning web presence! 🏢🌟
+This project was created with the goal of refining design skills and can serve as a valuable foundation for showcasing your architecture studio. 
